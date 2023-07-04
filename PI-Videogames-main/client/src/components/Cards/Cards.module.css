@@ -1,0 +1,11 @@
+.cardsContainer {
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: calc((80% - 20px) / 5) repeat(4, calc((80% - 20px) / 5));
+    grid-auto-rows: calc(35vh);
+    grid-gap: 20px;;
+}

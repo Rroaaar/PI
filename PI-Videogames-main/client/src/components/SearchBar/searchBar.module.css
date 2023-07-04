@@ -1,0 +1,174 @@
+.navbar {
+    padding: 10px;
+  }
+  .navbarBrand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3%;
+    height: 80%;
+    padding: 5px;
+  }
+  .navbarBrand a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbarNav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbarBrand img{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 1%;
+  }
+  
+  .navItem {
+    font-size: large;
+    background-color: none;
+    display: inline-block;
+    margin: 10%;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .navItem:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -30%;
+    width: 100%;
+    height: 1px;
+    background-color: #58dcd9;
+  }
+  
+  .navItem span {
+    color: #58dcda7e;
+    text-decoration: none;
+    font-family: unlearned;
+    font-size: larger;
+  }
+
+  .navItem span:hover {
+    color :#58dcd9;
+  }
+
+  .navContainer{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 15%;
+    height: 30px;
+  }
+  .menu button{
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .navInput{
+    position: relative;
+    width: 82%;
+    padding: 1%;
+  }
+  .navInput input{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+  }
+  .searchIcon{
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .filter{
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 70000;
+  }
+
+  .filter select{
+    opacity: 1;
+  }
+
+  .order{
+    align-items: center;
+    justify-content: center;
+    width: 12.5%;
+    height: 5%;
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 70000;
+  }
+  .orderSection{
+    color: white;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+  }
+  .orderSelector{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .upOrderSelector{
+    background-image: url('../../images/flecha-hacia-arriba.png');
+    background-size: cover;
+    background-position: center;
+    margin: 1px;
+    width: 100%;
+    padding-bottom: 100%;
+    border: none;
+    border-radius: 50%;
+  }
+  
+  .downOrderSelector{
+    background-image: url('../../images/flecha-hacia-abajo.png');
+    background-size: cover;
+    background-position: center;
+    margin: 1px;
+    width: 100%;
+    padding-bottom: 100%;
+    border: none;
+    border-radius: 50%;
+  }
+
+  @font-face {
+    font-family: cotespañol;
+    src: url('../../fonts/COTESPANOL.ttf');
+  }
+  @font-face {
+    font-family: unlearned;
+    src: url('../../fonts/unlearned_bitmap/unlearne.ttf');
+  }

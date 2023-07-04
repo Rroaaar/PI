@@ -1,0 +1,176 @@
+.container{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.bannerImage{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 75%;
+    opacity: 0.5;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(80,1fr);
+    grid-template-rows: repeat(5,1fr);
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 75%;
+    width: 100%;
+}
+
+.name{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    grid-row: 1/2;
+    grid-column: 2/40;
+}
+.name h1{
+    font-size: 400%;
+}
+.genres{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    grid-row: 4/6;
+    grid-column: 2/70;
+}
+
+.genre{
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    margin: 10px;
+    color: white;
+}
+
+.genre img{
+    object-fit: contain;
+    width: 100%;
+    height: 85%;
+}
+
+.genreName{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.releaseDate{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 5;
+    grid-column: 75/79;
+}
+
+.ratingStar {
+    align-items: center;
+    justify-content: center;
+    grid-row: 2/3;
+    grid-column: 75/79;
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: #D4AF37;
+    width: 0px;
+    height: 0px;
+    border-right: 75px solid transparent;
+    border-bottom: 52.5px solid #D4AF37;
+    border-left: 75px solid transparent;
+    transform: rotate(35deg);
+  }
+
+  .ratingStar::before {
+    border-bottom: 60px solid #D4AF37;
+    border-left: 22.5px solid transparent;
+    border-right: 22.5px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -33.75px;
+    left: -48.75px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+
+  .ratingStar::after {
+    position: absolute;
+    display: block;
+    color: #D4AF37;
+    top: 2.25px;
+    left: -78.75px;
+    width: 0px;
+    height: 0px;
+    border-right: 75px solid transparent;
+    border-bottom: 52.5px solid #D4AF37;
+    border-left: 75px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+
+  .rating{
+    font-family: azaro;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 75/79;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-3px)
+  }
+
+.platforms{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    grid-row: 3/4;
+    grid-column: 2/20;
+}
+
+.platform{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    border: solid rgba(0, 0, 0, 0.37);
+    margin: 5px;
+    padding: 5px;
+}
+
+.description{
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    display: flex;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+@font-face {
+    font-family: azaro;
+    src: url('../../fonts/Azaro.ttf');
+}
